@@ -6,15 +6,19 @@
 
 
 const btn = document.querySelector('.btn');
-let timerId;
+let timerId,
+    i = 0;
 
 btn.addEventListener('click', () => {
     // const timerId = setTimeout(logger, 2000);
-    const timerId = setInterval(logger, 2000);
+    timerId = setInterval(logger, 500);
 });
 
-clearInterval(timerId);//сбрасывает счётчик
-
 function logger () {
+    if (i === 3) {
+       clearInterval(timerId);//сбрасывает счётчик
+    }
     console.log('text');
+    i++;
 }
+
