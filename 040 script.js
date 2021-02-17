@@ -1,17 +1,25 @@
 "use script";
 
-const now = new Date();
+// const now = new Date();
 
-console.log(now);
+// console.log(now);
 
 const now2 = new Date();
 
-console.log(now2.getFullYear());
-console.log(now2.getMonth());
-console.log(now2.getDate());
-console.log(now2.getHours());
-console.log(now2.getMinutes());
-console.log(now2.getSeconds());
+console.log(now2.setHours(18));
+
+// console.log(now2.getFullYear());
+// console.log(now2.getMonth());
+// console.log(now2.getDate());
+// console.log(now2.getHours());
+// console.log(now2.getMinutes());
+// console.log(now2.getSeconds());
+// console.log(now2.getDay());
+// console.log(now2.getUTCHours());
+// console.log(now2.getTimezoneOffset());
+// console.log(now2.getTime());
+
+
 
 
 
