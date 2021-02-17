@@ -4,9 +4,9 @@
 
 // console.log(now);
 
-const now2 = new Date();
+// const now2 = new Date();
 
-console.log(now2.setHours(18));
+// console.log(now2.setHours(18));
 
 // console.log(now2.getFullYear());
 // console.log(now2.getMonth());
@@ -18,10 +18,6 @@ console.log(now2.setHours(18));
 // console.log(now2.getUTCHours());
 // console.log(now2.getTimezoneOffset());
 // console.log(now2.getTime());
-
-
-
-
 
 // const date = new Date('2021-02-17');
 
@@ -38,3 +34,13 @@ console.log(now2.setHours(18));
 // const date4 = new Date(-85677098965);
 
 // console.log(date4);
+
+let start = new Date();
+
+for (let i = 0; i < 100000; i++) {
+    let some = i ** 3;
+}
+
+let end = new Date();
+
+console.log(`Цикл отработал за ${end - start} милисекунд`);
