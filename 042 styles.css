@@ -1,0 +1,21 @@
+.box {
+  border: 20px solid #a70e9ffd;
+  width: 300px;
+  height: 200px;
+  overflow: auto;
+  padding: 10px;
+  background: rgba(214, 13, 107, 0.24);
+  font-size: 24px;
+  margin: 50px 0 0 100px;
+}
+
+button {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: 175px;
+  margin-right: auto;
+  width: 200px;
+  height: 80px;
+  background-color: rgba(160, 8, 41, 0.897);
+  border: none;
+}
