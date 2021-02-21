@@ -4,8 +4,8 @@ const box = document.querySelector('.box'),
       btn = document.querySelector('button');
 
 btn.addEventListener('click', () => {
-    // box.style.height = box.scrollHeight + 'px';
-    console.log(box.scrollTop);
+    box.style.height = box.scrollHeight + 'px';
+    // console.log(box.scrollTop);
 });
 
 console.log(box.getBoundingClientRect());
@@ -13,6 +13,12 @@ console.log(box.getBoundingClientRect());
 const style = window.getComputedStyle(box);
 
 console.log(style.display);
+
+//чтобы обращаться к нужным свойствам чеерз документ надо использовать другое свойство
+console.log(document.documentElement.scrollTop);
+
+window.scrollBy(0, 400); //скролит страницу на 400 пикселей отностиельно нынешнего местоположения
+window.scrollTo(0, 400); //скролит страницу на 400 пикселей от самого её начала
 
 // const width = box.clientWidth;
 // const height = box.clientHeight;
