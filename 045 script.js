@@ -23,3 +23,20 @@ alex.hello();
 
 console.log(ivan);
 console.log(alex);
+
+//Class
+
+class UserClass {
+    constructor(name, id) {
+        this.name = name;
+        this.id = id;
+    }
+
+    hello() {
+        console.log(`Hello ${this.name}`);
+    }
+
+    exit() {
+        console.log(`Пользоваьель ${this.name} ушёл`);
+    }
+}
