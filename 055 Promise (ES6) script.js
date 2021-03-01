@@ -15,19 +15,21 @@ const promise = new Promise(function(resolve, reject){
 });
 
 promise.then(product => {
-    const promise2 = new Promise(function(resolve, reject){
+    return new Promise(function(resolve, reject){
         setTimeout(() => {
             console.log('Модификация данных...');
             product.status = 'order';
             resolve(product);
         }, 2000);
     });
-
-    promise2.then(data =>{
-        setTimeout(() => {
-           console.log('Показ данных...');
-           console.log(data);
-        }, 2000);
-    });
+}).then(data =>{//чейнинг - цепочка функций 
+    setTimeout(() => {
+       console.log('Показ данных...');
+       console.log(data);
+    }, 2000);
+}).catch(() => {
+    console.error('Произошла ошибка');
+}).finally(() => {
+    console.log('Finally!');
 });
 
