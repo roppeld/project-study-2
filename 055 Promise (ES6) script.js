@@ -22,7 +22,7 @@ promise.then(product => {
             resolve(product);
         }, 2000);
     });
-}).then(data =>{//чейнинг - цепочка функций 
+}).then(data =>{//чейнинг - цепочка функций (не только тут, вообще функции прописанные через точку)
     setTimeout(() => {
        console.log('Показ данных...');
        console.log(data);
